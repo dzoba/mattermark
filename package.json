@@ -4,7 +4,8 @@
   "description": "A node module that wraps the Mattermark API.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp test",
+    "lint": "gulp eslint"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,18 @@
   "bugs": {
     "url": "https://github.com/dzoba/mattermark/issues"
   },
-  "homepage": "https://github.com/dzoba/mattermark#readme"
+  "homepage": "https://github.com/dzoba/mattermark#readme",
+  "dependencies": {
+    "bluebird": "^3.0.6",
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
+    "gulp-exit": "0.0.2",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-mocha": "^2.2.0",
+    "gulp-util": "^3.0.7",
+    "mocha": "^2.3.4",
+    "request": "^2.67.0",
+    "yargs": "^3.31.0"
+  }
 }
