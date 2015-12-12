@@ -8,7 +8,7 @@ var API_KEY = fs.readFileSync('apikey', "utf8").replace(/(\r\n|\n|\r)/gm,"");
 var Mattermark = require('../lib/index.js')(API_KEY);
 
 describe('Companies', function () {
-  describe('list', function () {
+  describe('List', function () {
     it('should return the first page of companies', function (done) {
       Mattermark.companies.list(function (err, res) {
         expect(res).to.have.property('meta');
@@ -25,7 +25,7 @@ describe('Companies', function () {
     });
   });
 
-  describe('query', function () {
+  describe('Query', function () {
     it('should return companies matching the query', function (done) {
       Mattermark.companies.query({
         employees: '100~',
@@ -46,7 +46,7 @@ describe('Companies', function () {
     });
   });
 
-  describe('by ID', function () {
+  describe('By ID', function () {
     it('should find a company by ID', function (done) {
       Mattermark.companies.byId(143115, function (err, res) {
         expect(res.name).to.equal('MetricsCat');
@@ -79,10 +79,9 @@ describe('Companies', function () {
         expect(res[0].company_name).to.be.a('string');
         expect(res[0].description).to.be.a('string');
         expect(res[0].total_funding).to.be.a('number')
-        
+
         return done();
       });
     });
-  });  
-
+  });
 });
