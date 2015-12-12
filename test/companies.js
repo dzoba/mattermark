@@ -46,4 +46,43 @@ describe('Companies', function () {
     });
   });
 
+  describe('by ID', function () {
+    it('should find a company by ID', function (done) {
+      Mattermark.companies.byId(143115, function (err, res) {
+        expect(res.name).to.equal('MetricsCat');
+        expect(res.website).to.equal('metricscat.com');
+        expect(res.linkedin_id).to.equal('3249905');
+        
+        return done();
+      });
+    });
+  });
+
+  describe('News Stories', function () {
+    it('should find a company\'s news stories', function (done) {
+      Mattermark.companies.stories(74910, function (err, res) {
+        expect(res).to.be.a('array');
+        expect(res[0].id).to.be.a('number');
+        expect(res[0].title).to.be.a('string');
+
+        return done();
+      });
+    });
+  });
+
+  describe('Similar Companies', function () {
+    it('should find companies similar to the id provided', function (done) {
+      Mattermark.companies.similar(74910, function (err, res) {
+        expect(res).to.be.a('array');
+        expect(res[0].id).to.be.a('number');
+        expect(res[0].probability).to.be.a('number');
+        expect(res[0].company_name).to.be.a('string');
+        expect(res[0].description).to.be.a('string');
+        expect(res[0].total_funding).to.be.a('number')
+        
+        return done();
+      });
+    });
+  });  
+
 });
