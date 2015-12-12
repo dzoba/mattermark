@@ -24,4 +24,26 @@ describe('Companies', function () {
       });
     });
   });
+
+  describe('query', function () {
+    it('should return companies matching the query', function (done) {
+      Mattermark.companies.query({
+        employees: '100~',
+        state: 'CA',
+        total_funding: '1000000~'
+      }, function (err, res) {
+        expect(res).to.have.property('meta');
+        expect(res.meta.total_record_count).to.be.at.least(500);
+        expect(res.meta.total_pages).to.be.at.least(10);
+        expect(res.meta.current_page).to.equal(1);
+
+        expect(res).to.have.property('companies');
+        expect(res.companies).to.be.a('array');
+        expect(res.companies.length).to.equal(50);
+
+        return done();
+      });
+    });
+  });
+
 });
