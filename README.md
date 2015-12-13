@@ -1,5 +1,12 @@
 # mattermark api wrapper
 
+[downloads-image]: http://img.shields.io/npm/dm/mattermark.svg
+[npm-url]: https://npmjs.org/package/mattermark
+[npm-image]: https://badge.fury.io/js/mattermark.svg
+
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url]  [![Build Status](https://travis-ci.org/dzoba/mattermark.svg?branch=master)](https://travis-ci.org/dzoba/mattermark) [![Dependency Status](https://gemnasium.com/dzoba/mattermark.svg)](https://gemnasium.com/dzoba/mattermark)
+
+
 Node.js wrapper for the [Mattermark.com](http://mattermark.com) API. See full Mattermark API documentation [here](http://http://mattermark.com/api/).
 
 ## Table of Contents
