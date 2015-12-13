@@ -4,7 +4,7 @@ var chai = require('chai');
 var expect = chai.expect;
 
 var fs = require('fs');
-var API_KEY = process.env.MM_API_KEY;
+var API_KEY = process.env.MM_API_KEY || fs.readFileSync('apikey', "utf8").replace(/(\r\n|\n|\r)/gm,"");
 var Mattermark = require('../lib/index.js')(API_KEY);
 
 describe('Search', function () {

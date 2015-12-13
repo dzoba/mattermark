@@ -81,7 +81,7 @@ Contributions are very welcome!  Please log issues using the Github issues inter
 
 ## Testing
 
-To run the tests:
+To run the tests you will need an API key.  This can be set in an environment variable named MM_API_KEY, or in a file called apikey in the root of this project.  Then run:
 
     npm run test
 To lint the code (please lint before submitting a PR):
