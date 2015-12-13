@@ -4,8 +4,10 @@ var chai = require('chai');
 var expect = chai.expect;
 
 var fs = require('fs');
-var API_KEY = fs.readFileSync('apikey', "utf8").replace(/(\r\n|\n|\r)/gm,"");
+var API_KEY = process.env.MM_API_KEY;
 var Mattermark = require('../lib/index.js')(API_KEY);
+
+console.log('ehy', API_KEY);
 
 describe('Companies', function () {
   describe('List', function () {

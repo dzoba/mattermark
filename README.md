@@ -14,7 +14,7 @@ Node.js wrapper for the [Mattermark.com](http://mattermark.com) API. See full Ma
 
 ## Getting Started
 
-First, you will need to get API access from [Mattermark.com](http://mattermark.com/api/) and obtain your API Key.
+First, you will need to get API access from [Mattermark.com](http://mattermark.com/api/) in the form of an API Key.
 
 ### Installation
 
