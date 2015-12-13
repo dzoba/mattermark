@@ -1,6 +1,6 @@
 # mattermark api wrapper
 
-Node.js wrapper for the [Mattermark.com](http://mattermark.com) API. See full Mattermark.com documentation [here](http://http://mattermark.com/api/).
+Node.js wrapper for the [Mattermark.com](http://mattermark.com) API. See full Mattermark API documentation [here](http://http://mattermark.com/api/).
 
 ## Table of Contents
 
@@ -9,7 +9,6 @@ Node.js wrapper for the [Mattermark.com](http://mattermark.com) API. See full Ma
   - [Usage](#usage)
   - [Options](#options)
 - [Examples](#examples)
-- [API Documentation](#api-documentation)
 - [Contributing](#contributing)
 - [Testing](#testing)
 
