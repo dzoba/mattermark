@@ -80,7 +80,7 @@ The Mattermark constructor accepts an `options` object which may contain one or 
 
 ## Examples
 
-Various examples for you to try out are here: [here](https://github.com/dzoba/mattermark/tree/master/examples).
+Various examples are here: [here](https://github.com/dzoba/mattermark/tree/master/tests).
 
 ## Contributing
 
