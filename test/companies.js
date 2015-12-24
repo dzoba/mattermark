@@ -18,7 +18,7 @@ describe('Companies', function () {
 
         expect(res).to.have.property('companies');
         expect(res.companies).to.be.a('array');
-        expect(res.companies.length).to.equal(50);
+        expect(res.companies.length).to.equal(10);
 
         return done();
       });
@@ -39,7 +39,7 @@ describe('Companies', function () {
 
         expect(res).to.have.property('companies');
         expect(res.companies).to.be.a('array');
-        expect(res.companies.length).to.equal(50);
+        expect(res.companies.length).to.equal(10);
 
         return done();
       });
